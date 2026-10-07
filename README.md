@@ -1,2 +1,2 @@
 # Proyecto-ReWear
-Este repositorios es diseñado para la asignatura de programación y diseño de aplicaciones
+ReWeares un servicio de suscripción de moda sostenible que te permite renovar tu guardarropa cada mes sin tener que comprar ropa nueva constantemente. Elige prendas de acuerdo con tu estilo, talla y preferencias, disfrútalas durante el mes y después intercámbialas por nuevas opciones. ReWear se encarga de la recolección, limpieza y preparación de cada prenda para darle una segunda vida, ofreciendo una forma práctica, económica y moderna de experimentar con diferentes estilos mientras reduces el desperdicio textil.
