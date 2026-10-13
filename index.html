@@ -17,10 +17,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
   <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
 <title>ReWear | Un nuevo look cada mes</title>
 <!-- El tag de title es para saber cómo quiero que se muestre en la web-->
@@ -49,7 +47,7 @@
             </li>
 
             <li>
-            <a href="#about">About</a>
+            <a href="#nosotros">About</a>
             </li>
 
             <li>
@@ -59,11 +57,13 @@
         </ul>
 
     </nav>
-    <button id="menu-toggle" class="menu-toggle" 
-    aria-label="Abrir menú" aria-expanded="false"
-    aria-controls="mobile-menu">☰</button>
-    </div>
+    <!--Boton MENU MOVIL-->
+    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
 
+<!--NAVEGACIÓN MOVIL-->
     <nav id="mobile-menu" class="mobile-nav">
       <ul>
 
@@ -88,23 +88,35 @@
     </nav>
 
     </header>    
+    <!--SE CIERRA EL HEADER-->
     
     <main>
-    <!-- SECCIÓN CARRUSEL -->
+    <!--SECCIÓN CARRUSEL-->
 
-<section id="carrusel" class="carousel-section container">
-    
-    <h2>Dale una segunda vida a tu estilo</h2>
-    <div class="carousel-track" id="carouseltrackebc">
+<section id="incio" class="hero-section">
+<div class="carousel-track" id="carouseltrackebc">
+
         <!-- PRIMERA IMGAEN HERO-->
         <div class="carousel-slide">
             <img src="img/hero1.jpg" alt="imagen hero1">
+    <div class="slide-overlay">
+                        <span class="badge">Moda para Todos</span>
+                        <h1>Everywhere<span class="highlight-yellow"> con un solo tap</span></h1>
+                        <p>Renueva tu clóset, transforma tu estilo.</p>
+                        <a href="#servicios" class="btn-hero">Descubrir servicios</a>
+                    </div>
 
 <!--SEGUNDA IMAGEN HERO-->
 
         </div>
         <div class="carousel-slide">
             <img src="img/hero2.jpg" alt="imagen hero2">
+            <div class="slide-overlay">
+                        <span class="badge">Intercambia moda</span>
+                        <h1>Desde cualquier lado<span class="highlight-yellow">A tu alcance</span></h1>
+                        <p>Dale otra vuelta a tu clóset</p>
+                        <a href="#servicios" class="btn-hero">Descubrir servicios</a>
+                    </div>
 
 
         </div>
@@ -114,13 +126,83 @@
         <div class="carousel-slide">
             <img src="img/hero3.jpg" alt="imagen hero3">
         </div>
-
-    </div>
-
-
+<div class="slide-overlay">
+                        <span class="badge">Viste diferente, consume consciente.</span>
+                        <h1>crea futuro<span class="highlight-yellow">Sin contaminación</span></h1>
+                        <p>Menos desperdicio, más estilo.</p>
+                        <a href="#servicios" class="btn-hero">Descubrir servicios</a>
+                    </div>
+                 </div>
+</div>
+ <!-- Botones de Navegación del Carrusel -->
+            <button id="btn-prev" class="carousel-arrow prev" aria-label="Imagen anterior">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button id="btn-next" class="carousel-arrow next" aria-label="Imagen siguiente">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <!-- Puntos Indicadores -->
+            <div class="carousel-dots" id="carousel-dots">
+                <button class="dot active" aria-label="Ir a diapositiva 1"></button>
+                <button class="dot" aria-label="Ir a diapositiva 2"></button>
+                <button class="dot" aria-label="Ir a diapositiva 3"></button>
+            </div>
     </section>
 
-<p>This is a paragraph.</p>
+<!-- SECCIÓN DE SERVICIOS -->
+        <section id="servicios" class="servicios-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>NUESTRA DINAMICA</h2>
+                    <h3>Intercambia lo que ya no usas por algo que te encante.</h3>
+                </div>
+        
+    <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon yellow"><i class="fa fa-star"></i></div>
+                        <h4>Moda en cualquier lado</h4>
+                        <p>Dale una segunda vida a tu estilo.</p>
+                    </div>
+
+             <div class="card">
+                        <div class="card-icon red"><i class="fa fa-star"></i></div>
+                        <h4>La moda se comparte, no se desperdicia.</h4>
+                        <p>Accede a nuevas prendas sin acumular más.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon yellow"><i class="fa fa-star"></i></div>
+                        <h4>Streetstyle</h4>
+                        <p>Tu próximo look empieza con un intercambio.</p>
+                    </div>
+                 </div>
+            </div>
+        </section>
+         
+ <!-- SECCIÓN NOSOTROS -->
+        <section id="nosotros" class="nosotros-section">
+            <div class="container nosotros-inner">
+                <div class="nosotros-img">
+                    <img src="img/producto3.jpg">
+                </div>
+                <div class="nosotros-info">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <h3>Apasionados por la moda sostenible</h3>
+                    <p><strong>ReWear </strong>, a new way to wear</p>
+                    <p>Renueva tu clóset con un servicio de suscripción mensual que te permite intercambiar prendas y descubrir nuevos estilos.</p>
+                    <div class="stats">
+                        <div class="stat-box">
+                            <span class="stat-num yellow">+150k</span>
+                            <span class="stat-lbl"> suscriptores</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num red">100%</span>
+                            <span class="stat-lbl">Satisfacción</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
    
 <footer>
@@ -132,13 +214,13 @@
       <a href="https://www.instagram.com/majo_enriquezzz?utm_source=ig_web_button_share_sheet&vrfl=ZDNlZDc0MzIxNw==" aria-label="Instagram">
         <i class="fa-brands fa-instagram"></i>
       </a>
-      <a href="https://www.youtube.com/" aria-label="YouTube">
+      <a href="https://www.youtube.com/@Mar%C3%ADaJos%C3%A9Enr%C3%ADquezAlc%C3%A1ntara-e3g" aria-label="YouTube">
         <i class="fa-brands fa-youtube"></i>
       </a>
-      <a href="https://www.linkedin.com/" aria-label="LinkedIn">
+      <a href="https://www.linkedin.com/feed/" aria-label="LinkedIn">
         <i class="fa-brands fa-linkedin-in"></i>
       </a>
-      <a href="https://x.com/" aria-label="X (Twitter)">
+      <a href="https://x.com/?lang=es" aria-label="X (Twitter)">
         <i class="fa-brands fa-x-twitter"></i>
       </a>
     </div>
